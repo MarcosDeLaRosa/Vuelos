@@ -1,0 +1,10 @@
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\bin\Debug\Vuelos.exe.config
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\bin\Debug\Vuelos.exe
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\bin\Debug\Vuelos.pdb
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.Properties.Resources.resources
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.Form1.resources
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.csproj.GenerateResource.cache
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.exe
+C:\Users\lenovo\source\repos\Vuelos\Vuelos\obj\Debug\Vuelos.pdb
