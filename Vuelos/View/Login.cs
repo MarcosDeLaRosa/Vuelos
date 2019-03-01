@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vuelos.Controller;
+using Vuelos.View;
 
 namespace Vuelos
 {
@@ -66,12 +67,17 @@ namespace Vuelos
 
             Controller.Login enviar = new Controller.Login();
             string resivir = enviar.Pasar(usuario, password);
-            if (resivir == "Exito")
+            if (resivir == "Gerente")
             {
-                MessageBox.Show("Bienvenido");
+                Gerente gerente = new Gerente();
+                gerente.Show();
             }
-            else
+            if (resivir == "Vendedor")
             {
+                Vendedor vendedor = new Vendedor();
+                vendedor.Show();
+            }
+            if (resivir != "Vendedor" && resivir != "Gerente") {
                 MessageBox.Show("Datos incorrectos");
             }
         }

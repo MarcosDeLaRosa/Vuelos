@@ -13,19 +13,22 @@ namespace Vuelos.Model
          public string Verificar(string usuario, string password)
         {
             string retornar = "";
-            SqlCommand cmd = new SqlCommand("Select * from Empleado where Usuario =  '"+ usuario + "' and Pass='"+ password + "' ",conexion);
+            SqlCommand cmdGerente = new SqlCommand("Select * from Empleado where Usuario =  '"+ usuario + "' and Pass='"+ password + "' and Rol='1' ",conexion);
+            SqlCommand cmdVendedor = new SqlCommand("Select * from Empleado where Usuario =  '" + usuario + "' and Pass='" + password + "' and Rol='2' ", conexion);
 
             conexion.Open();
-            SqlDataReader Respuesta = cmd.ExecuteReader();
-            if (Respuesta.Read() == true)
+            SqlDataReader RespuestaG = cmdGerente.ExecuteReader();
+            if (RespuestaG.Read() == true)
             {
-                retornar = "Exito";
+                retornar = "Gerente";
             }
-            else {
-                retornar = "Datos Incorrectos";
+            conexion.Close();
+
+            conexion.Open();
+            SqlDataReader RespuestaV = cmdVendedor.ExecuteReader();
+            if (RespuestaV.Read() == true) {
+                retornar = "Vendedor";
             }
-
-
             conexion.Close();
             return retornar;
         }
